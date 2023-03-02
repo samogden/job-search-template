@@ -1,0 +1,116 @@
+%----------------------------------------------------------------------------------------
+%	VALUES FOR THE THESIS
+%----------------------------------------------------------------------------------------
+
+% \newcommand{\name}{Yu Liu} % Author name
+% \newcommand{\thesistitle}{Residential Network Security Study} % Title of the thesis
+% \newcommand{\submissiondate}{Auguest, 2020} % Submission date "Month, year"
+% \newcommand{\supervisor}{Craig A. Shue} % Supervisor name
+% \newcommand{\cosupervisor}{Robert J. Walls} % Co-Supervisor name, comment this line if there is none
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY STYLE (pick the style you want)
+%----------------------------------------------------------------------------------------
+
+%\usepackage[square, numbers, sort&compress]{natbib} % for bibliography - Square brackets, citing references with numbers, citations sorted by appearance in the text and compressed (as in [4-7])
+%\usepackage[longnamesfirst,round]{natbib} % Natural Sciences bibliography
+
+%\bibliographystyle{alpha}
+%\bibliographystyle{abbrv}
+%\bibliographystyle{Preamble/physics_bibstyle} % You may use a different style adapted to your field
+%\bibliographystyle{unsrtnat} % You may use a different style adapted to your field
+
+
+%----------------------------------------------------------------------------------------
+%	YOUR PACKAGES (be careful of package interaction)
+%----------------------------------------------------------------------------------------
+
+
+\usepackage{tikz}
+\DeclareRobustCommand{\ballnumber}[1]{\tikz[baseline=(myanchor.base)]
+  \node[circle,fill=.,inner sep=1pt] (myanchor) {\color{-.}\sffamily\footnotesize #1};} 
+\usepackage{xspace}
+
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+
+\usepackage[bookmarks, colorlinks, breaklinks]{hyperref} % Required for links
+
+% Set link colours
+\hypersetup{
+  linkcolor=MidnightBlue,
+  citecolor=MidnightBlue,
+  filecolor=black,
+  urlcolor=MidnightBlue
+}
+\newcommand{\MYhref}[3][blue]{\href{#2}{\color{#1}{#3}}}%
+
+%\newcommand{\ballnumbercaption}[1]{\tikz[baseline=(myanchor.base)]
+%  \node[circle,fill=.,inner sep=1pt] (myanchor) {\color{-.}\sffamily\footnotesize #1};}
+
+%----------------------------------------------------------------------------------------
+%	YOUR DEFINITIONS AND COMMANDS
+%----------------------------------------------------------------------------------------
+
+% General
+%\newcommand{\thetitle}{Bridging the Gap Between Mobile and Cloud through Fine- and Coarse-grained optimizations.}
+\newcommand{\thetitle}{Mobile-Oriented Deep Learning Inference:\\Fine- and Coarse-grained Approaches}
+\newcommand{\pdftitle}{\thetitle} 
+
+
+
+\newcommand{\todo}[1]{{\color{blue}\textbf{TODO: \textit{#1}}}}
+\newcommand{\plan}[1]{{\color{orange}\textbf{Plan: \textit{#1}}}}
+\newcommand{\added}[1]{{\color{blue}[[#1]]}}
+\newcommand{\eat}[1]{}
+
+\newcommand{\para }[1]{\smallskip \noindent  {\bf \emph{#1}}}
+\newcommand{\1}{{\em (i)}}
+\newcommand{\2}{{\em (ii)}}
+\newcommand{\3}{{\em (iii)}}
+\newcommand{\4}{{\em (iv)}}
+\newcommand{\5}{{\em (v)}}
+
+%\renewcommand\thesubfigure{(\alph{subfigure})}
+
+% Paper Specific
+%\newcommand{\sysname}{\textsc{MD\-Inference}\xspace}%
+\newcommand{\modi}{\textit{MODI\xspace}} % or MultiServe
+\newcommand{\pieslicer}{\textit{PieSlicer}\xspace}
+\newcommand{\mdinference}{\textit{MDInference}\xspace}
+\newcommand{\ripcord}{\textit{CremeBrulee}\xspace} % or MultiServe
+\newcommand{\thrustthree}{\textit{LayerCake}\xspace} % or MultiServe
+
+
+% I'm really lazy.
+%% Ripcord
+\newcommand{\smart}{\emph{BeladyAM}\xspace}
+\newcommand{\beladyam}{\emph{BeladyAM-oracle}\xspace}
+
+\newcommand{\x}{$\times$\xspace}
+
+%% MDInference
+\newcommand{\framework}{framework\xspace}
+\newcommand{\frameworks}{frameworks\xspace}
+\newcommand{\accuracy}{aggregate accuracy\xspace}
+\newcommand{\Accuracy}{Aggregate accuracy\xspace}
+
+\usepackage{pifont} % http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
+%% Thesis
+\newcommand{\subrequests}{subrequests\xspace}
+\newcommand{\subrequest}{subrequest\xspace}
+
+
+\newcounter{challengenum}
+\setcounter{challengenum}{0}
+\newcommand{\challenge}[1]{\noindent%
+   \refstepcounter{challengenum}{\\\large\textbf{Challenge \thechallengenum} : \emph{#1}}
+}
+
+\usepackage[super]{nth}

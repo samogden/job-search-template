@@ -1,0 +1,205 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Compact Academic CV
+% LaTeX Template
+% Version 2.0 (6/7/2019)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Authors:
+% Dario Taraborelli (http://nitens.org/taraborelli/home)
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% More specifically: http://www.latextemplates.com/template/compact-academic-cv
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article} % Default document font size
+
+
+%----------------------------------------------------------------------------------------
+%	REQUIRED PACKAGES AND MISC CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage{graphicx} % Required for including images
+
+\setlength{\parindent}{0pt} % Stop paragraph indentation
+
+%----------------------------------------------------------------------------------------
+%	MARGINS
+%----------------------------------------------------------------------------------------
+
+\usepackage{geometry} % Required for adjusting page dimensions and margins
+
+\geometry{
+	paper=a4paper, % Paper size, change to letterpaper for US letter size
+	top=3.25cm, % Top margin
+	bottom=4cm, % Bottom margin
+	left=3.5cm, % Left margin
+	right=3.5cm, % Right margin
+	headheight=0.75cm, % Header height
+	footskip=1cm, % Space from the bottom margin to the baseline of the footer
+	headsep=0.75cm, % Space from the top margin to the baseline of the header
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+%----------------------------------------------------------------------------------------
+%	FONTS
+%----------------------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+
+\usepackage[semibold]{ebgaramond} % Use the EB Garamond font with a reduced bold weight
+
+%----------------------------------------------------------------------------------------
+%	SECTION STYLING
+%----------------------------------------------------------------------------------------
+
+\usepackage{sectsty} % Allows changing the font options for cv-sections in a document
+
+\sectionfont{\fontsize{13.5pt}{18pt}\selectfont} % Set font options for cv-sections
+\subsectionfont{\mdseries\scshape\normalsize} % Set font options for subcv-sections
+\subsubsectionfont{\mdseries\upshape\bfseries\normalsize} % Set font options for subsubcv-sections
+
+%----------------------------------------------------------------------------------------
+%	MARGIN YEARS
+%----------------------------------------------------------------------------------------
+
+\usepackage{marginnote} % Required to output text in the margin
+
+\newcommand{\years}[1]{\marginnote{\normalsize #1}} % New command for adding years to the margin
+\renewcommand*{\raggedleftmarginnote}{} % Left-align the years in the margin
+\setlength{\marginparsep}{0pt} % Move the margin content closer to the text
+\reversemarginpar % Margin text to be output into the left margin instead of the default right margin
+
+%----------------------------------------------------------------------------------------
+%	COLOURS
+%----------------------------------------------------------------------------------------
+
+\usepackage[usenames, dvipsnames]{xcolor} % Required for specifying colours by name
+
+%----------------------------------------------------------------------------------------
+%	LINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage[bookmarks, colorlinks, breaklinks]{hyperref} % Required for links
+
+\usepackage{enumitem}
+\setlist{nosep}% http://ctan.org/pkg/enumitem
+\usepackage[super]{nth}
+
+%\renewcommand{\nth}{}
+
+
+\usepackage{etaremune}
+\renewcommand{\labelenumi}{[\theenumi]}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{\thepage~of \pageref*{LastPage}}
+
+% Set PDF meta-information
+\hypersetup{
+	pdftitle={Sam P. Ell - Curriculum vitae}, % Todo
+	pdfauthor={Sam P. Ell} % Todo
+}
+
+%----------------------------------------------------------------------------------------
+
+\input{./mydefinitions}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	CONTACT AND GENERAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+{\LARGE\bfseries Sam P. Ell}\\ % Name
+
+\begin{minipage}[t]{0.5\textwidth}
+%
+\section*{Current position}
+\todo{\emph{PhD Candidate (ABD)},\\}%,\\ Worcester MA
+%
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+\begin{flushright}
+%
+\smallskip
+Cell: \todo{\href{tel:15555555555}{1(555)555-5555}} \\% Phone number
+Email: \todo{\href{mailto:youremailhere@gmail.com}{youremailhere@gmail.com}}\\ % Email address
+\textsc{url}: \todo{\href{http://sample.net/}{sample.net}}\\ % Academic/personal website
+GitHub: \todo{\href{https://github.com}{github.com}}\\
+LinkedIn: \todo{\href{https://www.linkedin.com/}{linkedin.com/}}\\
+%
+\end{flushright}
+\end{minipage}
+%------------------------------------------------
+
+
+%------------------------------------------------
+
+\section*{Research interests}
+
+My research interests focus on enabling deep learning to be used in real-world scenarios in as seamless a way as possible.
+This translates to my work focusing on designing systems to execute deep learning models on and for resource constrained devices, such as a mobile phones, through machine learning, performance modeling, and cloud computing.
+
+
+%\section*{Areas of specialization}
+%Mobile-Oriented Deep Learning Inference, Machine Learning, Cloud \& Edge Systems, Performance Modeling and Analysis
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+%% Core things
+\input{cv-sections/education.tex}
+\input{cv-sections/publications.tex}
+
+%% Experience
+\input{cv-sections/research-experience.tex}
+\input{cv-sections/teaching-experience.tex}
+\input{cv-sections/industry-experience.tex}
+
+%% Extras
+\input{cv-sections/mentoring.tex}
+\input{cv-sections/awards.tex}
+\input{cv-sections/service.tex}
+\input{cv-sections/memberships.tex}
+\input{cv-sections/skills.tex}
+
+
+%\section*{Relevant Courses}
+%Machine Learning, Statistical Methods, Cloud and Edge Computing, Network Security, Fundamentals of Scientific Teaching and Pedagogy
+
+%----------------------------------------------------------------------------------------
+%	GRANTS, HONOURS AND AWARDS
+%----------------------------------------------------------------------------------------
+
+
+
+
+\vfill % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+
+% Any final footer text such as a URL to the latest version of this CV, last updated date, compiled in XeTeX, etc
+\begin{center}
+	\scriptsize
+	Last updated: \today~~\raisebox{-0.5pt}{\textbullet}~~\todo{\href{https://www.sample.net}}{https://www.sample.net}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

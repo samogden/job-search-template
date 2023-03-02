@@ -1,0 +1,129 @@
+% % document type % %
+\documentclass[12pt]{article}
+
+% % preamble % %
+\usepackage{amsmath} % % centers and provides equation numbers for align env
+\usepackage{amssymb} % % allows use of normal N symbol
+\usepackage{graphicx} % % allows graphics floats
+\usepackage{grffile} % % allows more image file names
+\usepackage{subcaption} % % allows subfigures in floats
+\usepackage[margin=1in]{geometry}
+%\usepackage[hidelinks]{hyperref} % % allows URLs and in-document hyperlinking
+\usepackage{color}
+\usepackage{setspace} % % allows line spacing
+\usepackage{moreverb} % % allows use of verbatimtab
+\renewcommand\verbatimtabsize{4\relax} % % sets verbatimtab indent to half of default, looks better
+\edef\restoreparindent{\parindent=\the\parindent\relax}
+\usepackage{parskip} % % don't indent new paragraphs
+\restoreparindent
+\usepackage{enumerate}
+\usepackage{harvard}
+
+\usepackage{lastpage}
+% % header and footer % %
+\usepackage{fancyhdr}
+\fancypagestyle{plain}{
+  \fancyhead[L]{Teaching Statement}  % left header
+  \fancyhead[R]{\Name{}} % right header
+  
+  \fancyfoot[R]{\thepage~of \pageref{LastPage}} % % pg number in footer
+  \fancyfoot[C]{} % % remove default centered page numbers
+  \fancyfoot[L]{} % last compiled in footer
+}
+
+% % expand head of document:
+\setlength{\headheight}{14.49998pt}
+
+\input{./mydefinitions}
+
+% % application specific information % %
+\usepackage{school}
+
+% % document begins % %
+\begin{document} \pagestyle{plain}
+
+%p1: philosophy and what kind of teacher I want to be
+%2: who I am and why I think this
+%3: experience
+%4: maybe put the bloom's stuff here, so we can say why project-based learning is good
+
+% Think about how to break it down into parts and more obvious chunks
+% for past experiences, add concrete explicit connections between the two parts
+
+% Can add in section about courses that I can teach, or that I would love to teach
+  % some people are very specific about the courses they can teach (e.g. CS1003)
+% can mention that I do want to teach freshman, but need to talk about why
+  % past experiences, why I really enjoy it
+
+% What will I do to carry out the philosophy?
+  % what is my plan, and how well does it scale?
+
+
+
+My teaching philosophy is that it is critical to help your students build connections between what they are working on and other aspects of their life, be they personal projects or what they are learning in other classes.
+This allows not only for students to make more meaningful connections and grow as students.
+By creating projects that explore core concepts, students can apply their knowledge and develop their style through experimentation.
+Key to this is striving to understand how different students learn and helping them to understand the material in however it makes the most sense to them.
+By understanding the needs and progress of students well it is possible to create an inclusive environment where students feel comfortable to be themselves and ask questions, thus allowing for an overall better experience.
+This philosophy is based not only on my personal experience as a student and as a teacher, but also on instructional literature that emphasizes the importance of connecting knowledge to real-world projects that provide a solid foundation in which to explore more theoretical topics.
+
+\para{Teaching influences.}
+As a student, I've experienced several classes that were particularly well designed and led to excellent learning experiences.
+One of these was a class that initially drew me into STEM and that I later helped to run, \emph{Introduction to Engineering}, where each class session was designed to first teach concepts and then apply them in a team-based project, such as building a trebuchet or designing a circuit.
+This approach is highly effective, with key parts of Bloom's taxonomy being the introduction of knowledge via teaching being extended by the application of the knowledge and synthesis with the knowledge.
+Later in the class when we designed our own projects we then got to evaluate the different decisions we were making.
+This class overall was an excellent example of how to apply good teaching principles in a project-based class.
+
+I helped to implement a similar approach when I was a teaching assistant during my Ph.D. for \emph{Introduction to Artificial Intelligence}.
+This class was aimed at upper-level computer science majors but often included students from a range of other majors. 
+That term, I designed and ran an ongoing project, where teams iterated on a Gomoku-playing program applying principles they learned from lectures.
+This allowed both for a specific application of their knowledge and a test of their comprehension, but also an analysis of the different game engine designs and what each offered.
+Some teams took this farther, turning to an evaluation of environmental choices such as language, different programming techniques, or, in one particularly interesting case, bending the rules to get a jump on the other player.
+This class not only engaged the students in the material at hand; it drew them into the larger narrative of what they were learning throughout the term and helped them make connections to other subjects.
+Further, it drew them into conversations within their group and with other groups, comparing approaches and helping to bridge their backgrounds and experiences.
+
+
+\para{Teaching philosophy.}
+There are two key aspects to implementing my teaching philosophy.
+The first is to approach classes as a series of projects that are realistic and engaging and build well upon each other.
+The second is to be able to give students fast and helpful feedback that is tailored to them and their understanding.
+Real-world projects can be difficult at an introductory level since they often leverage advanced topics.
+However, introductory classes can adapt to this by providing a framework for developing an understanding.
+One class I was a TA for, \emph{Accelerated Object-Oriented Concepts} has done this well by giving the framework for a piano and having the students fill in the rest of the keys.
+This took a common object and let students work in a way that helps them use their knowledge and intuition. 
+
+Quick, tailored feedback is also difficult because responding to students can take time, especially now that classes are often hybrid or remote, and timeshifting is commonplace for many students.
+However, a class I took, \emph{Machine Learning}, was an excellent example of giving feedback to students in real-time.
+For each project, each of which consisted of implementing aspects of neural networks, an exhaustive set of unit tests that identified common errors were additionally supplied. 
+This allowed each student to quickly determine where their code was running into trouble and contact the professor as needed.
+While this does not fully conform to the needs of the student, it helps the instructor better understand where a student's understanding is and get a better sense of their needs, as well as helping the professor quickly get up to speed on the students' problems.
+
+
+\para{Experience.}
+I have previously been a teaching assistant at several levels ranging from introductory freshman-level classes to senior-level classes. 
+During my undergraduate degree and as an M.S. student, I was a TA for both an introductory level engineering class and a class that aimed to introduce computer science to freshman non-majors by way of puzzles.
+For both of these classes, I had an active role in designing and running individual classes and labs.
+During my Ph.D., I was TA for both the introductory Accelerated Object-Oriented Concepts, and for the upper-level classes Mobile and Ubiquitous Computing, Introduction to Artificial Intelligence, Operating Systems, and Computer Networks.
+In these classes my responsibilities ranged from organizing and running review sessions, presenting as a guest lecturer in class, and helping students outside of office hours.
+
+
+
+\para{Potential classes.}
+Having already worked on a range of classes across multiple disciplines and different learning styles, I feel comfortable teaching a wide range of classes.
+At the undergraduate level, this would include classes in machine learning, mobile-oriented development, and computer architecture.
+In addition, I would be interested in a wide range of introductory programming topics, as I particularly enjoyed working with these students in the past.
+At the graduate level, I would be comfortable teaching courses in cloud computing, mobile computing, and systems for deep learning applications.
+While moving courses online can be difficult, computer science is uniquely able to be completed remotely.
+Thus I would be interested in working to optimize classes for online and would be glad to help encourage students to learn how to best work remotely and best utilize available online tools.
+
+My experience on both sides of academia has helped me see a range of techniques that were both effective and engaging.
+Project-based learning is central to this as it not only interested me in STEM initially but also has helped me reach a diverse set of students.
+Helping draw students from all backgrounds and experiences to STEM is important to me as I believe every student can benefit from technical education, as well as the community growing from the diversity.
+This is core to what drove me to pursue my Ph.D. and I think it is essential to help students find something they truly are excited for and interested in. 
+I very much look forward to getting help students to learn and find this same excitement for their field as I have.
+
+
+
+% % end % %
+\end{document}
+but 

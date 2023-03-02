@@ -1,0 +1,36 @@
+% % color for links
+\definecolor{linkcol}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,
+	linkcolor=linkcol,urlcolor=blue,
+	anchorcolor=linkcol,citecolor=linkcol}
+
+% For \email{ADDRESS}, links ADDRESS to the url mailto:ADDRESS in teletype fixed-width font
+\providecommand*\email[1]{\href{mailto:#1}{\texttt{#1}}}
+
+% For \url{ADDRESS}, links ADDRESS to the url https://ADDRESS in teletype fixed-width font
+\renewcommand*\url[1]{\href{http://#1}{\texttt{#1}}}
+
+% % use for commenting -- change initials to match yours
+\usepackage{color}
+\newcommand{\rwcomment}[1]{{\textcolor{blue}{\textsc{\textbf{[#1 --RW]}}}}}
+
+% % document variables % %
+
+% % your name
+\newcommand{\Name}{\todo{Sam P. Ell}}
+
+% % department name
+\newcommand{\DepartmentName}{\todo{Computer Science}\xspace}
+
+% % position name
+\newcommand{\PositionName}{\todo{TITLE position in \DepartmentName}}
+
+\newcommand{\joblink}{}
+
+% % institution name
+\newcommand{\InstitutionName}{\todo{SCHOOL}\xspace}
+
+% % department address
+\newcommand{\DepartmentAddress}{\todo{ROOM BUILDING \\
+	STREET ADDRESS \\
+	CITY STATE ZIP}}
